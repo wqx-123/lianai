@@ -12,8 +12,8 @@ import { Star, Heart, Brain, Sparkles } from 'lucide-react';
 
 interface AnalysisCardProps {
   profile: Profile;
-  zodiacAnalysis?: ZodiacAnalysis;
-  personaAnalysis?: PersonaAnalysis;
+  zodiacAnalysis?: ZodiacAnalysis | null;
+  personaAnalysis?: PersonaAnalysis | null;
 }
 
 export function AnalysisCard({ profile, zodiacAnalysis, personaAnalysis }: AnalysisCardProps) {

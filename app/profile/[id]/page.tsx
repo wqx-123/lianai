@@ -28,8 +28,8 @@ export default function ProfileDetailPage() {
 
   const [profile, setProfile] = useState<Profile | null>(null);
   const [stageData, setStageData] = useState<RelationshipStageData | null>(null);
-  const [zodiacAnalysis, setZodiacAnalysis] = useState<ZodiacAnalysis | undefined>();
-  const [personaAnalysis, setPersonaAnalysis] = useState<PersonaAnalysis | undefined>();
+  const [zodiacAnalysis, setZodiacAnalysis] = useState<ZodiacAnalysis | null>(null);
+  const [personaAnalysis, setPersonaAnalysis] = useState<PersonaAnalysis | null>(null);
   const [strategy, setStrategy] = useState<Strategy | null>(null);
   const [interactions, setInteractions] = useState<Interaction[]>([]);
   const [loading, setLoading] = useState(true);

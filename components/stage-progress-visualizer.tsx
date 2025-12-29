@@ -101,19 +101,23 @@ export function StageProgressVisualizer({
   }
 
   // 安全获取阶段配置的辅助函数
-  const getStageConfig = (stage: RelationshipStage | string | undefined) => {
-    return STAGE_CONFIG[stage as RelationshipStage] || STAGE_CONFIG.meeting;
+  const getStageConfig = (stage: RelationshipStage | string | undefined | null) => {
+    if (!stage || !STAGE_CONFIG[stage as RelationshipStage]) {
+      return STAGE_CONFIG.meeting;
+    }
+    return STAGE_CONFIG[stage as RelationshipStage];
   };
 
   // 安全获取进度数据
-  const getProgress = (stage: RelationshipStage | string | undefined) => {
+  const getProgress = (stage: RelationshipStage | string | undefined | null) => {
+    if (!stage) {
+      return { tasksCompleted: 0, totalTasks: 0, percentage: 0 };
+    }
     return stageData.stageProgress?.[stage as RelationshipStage] || { tasksCompleted: 0, totalTasks: 0, percentage: 0 };
   };
 
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [selectedStage, setSelectedStage] = useState<RelationshipStage>(
-    stageData.currentStage && STAGE_CONFIG[stageData.currentStage] ? stageData.currentStage : 'meeting'
-  );
+  const [selectedStage, setSelectedStage] = useState<RelationshipStage | null>(null);
   const [detailTab, setDetailTab] = useState<'overview' | 'tips' | 'media'>('overview');
 
   const currentStageIndex = STAGE_ORDER.indexOf(stageData.currentStage || 'meeting');

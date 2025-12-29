@@ -1,0 +1,470 @@
+{
+  "meeting": {
+    "stage": "meeting",
+    "name": "认识阶段",
+    "description": "初次接触，建立第一印象的重要时期",
+    "tips": [
+      {
+        "category": "chat",
+        "title": "开场话题建议",
+        "content": "从轻松话题切入，如天气、美食、旅行、兴趣爱好等。避免过于私人或敏感的话题。",
+        "priority": "high"
+      },
+      {
+        "category": "chat",
+        "title": "保持神秘感",
+        "content": "不要一次性透露所有信息，保持适度神秘感，让对方有继续了解的兴趣。",
+        "priority": "medium"
+      },
+      {
+        "category": "communication",
+        "title": "倾听比表达更重要",
+        "content": "多提问，认真倾听对方回答，适时给予回应和赞美。",
+        "priority": "high"
+      },
+      {
+        "category": "date",
+        "title": "初次约会地点",
+        "content": "选择轻松、安全的公共场合，如咖啡厅、书店、艺术展览等，避免过于私密或嘈杂的环境。",
+        "priority": "high"
+      },
+      {
+        "category": "gift",
+        "title": "小礼物原则",
+        "content": "初次见面不建议送礼，如需送礼应选择简单、无压力的小物件，如一本好书、一杯咖啡。",
+        "priority": "low"
+      },
+      {
+        "category": "warning",
+        "title": "避免过度热情",
+        "content": "不要表现出过度的需求感，保持自然、自信的状态。",
+        "priority": "high"
+      }
+    ],
+    "mediaReferences": [
+      {
+        "type": "tv",
+        "title": "恋爱技巧教学",
+        "description": "B站热门恋爱技巧UP主实战教学",
+        "scene": "搭讪和初次相识的完整流程演示",
+        "takeaway": "实战经验比理论更重要",
+        "videoUrl": "https://search.bilibili.com/all?keyword=搭讪教程",
+        "videoType": "other"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "meeting_1",
+        "title": "交换联系方式",
+        "description": "成功获取对方的微信、电话等联系方式"
+      },
+      {
+        "id": "meeting_2",
+        "title": "了解基本信息",
+        "description": "知道对方的名字、职业、大致年龄等基本信息"
+      },
+      {
+        "id": "meeting_3",
+        "title": "建立共同话题",
+        "description": "找到至少2-3个共同感兴趣的话题"
+      },
+      {
+        "id": "meeting_4",
+        "title": "初次约会",
+        "description": "安排并完成第一次正式约会"
+      },
+      {
+        "id": "meeting_5",
+        "title": "留下良好印象",
+        "description": "让对方对你产生积极的印象"
+      }
+    ],
+    "transitionConditions": [
+      "双方已交换联系方式并保持联系",
+      "有至少一次面对面交流",
+      "双方都有继续了解的意愿",
+      "聊天频率达到每周3次以上"
+    ]
+  },
+  "knowing": {
+    "stage": "knowing",
+    "name": "了解阶段",
+    "description": "深入交流，探索兴趣和价值观",
+    "tips": [
+      {
+        "category": "chat",
+        "title": "分享个人经历",
+        "content": "适当分享自己的成长经历、梦想和价值观，促进深度交流。",
+        "priority": "high"
+      },
+      {
+        "category": "chat",
+        "title": "询问深层问题",
+        "content": "可以问一些更有深度的问题，如'你理想的生活是什么样子？''什么事情让你最有成就感？'",
+        "priority": "medium"
+      },
+      {
+        "category": "date",
+        "title": "多样化约会体验",
+        "content": "安排不同类型的约会：电影、展览、运动、美食等，观察对方在不同场合的状态。",
+        "priority": "high"
+      },
+      {
+        "category": "communication",
+        "title": "保持联系频率",
+        "content": "每天保持适度的联系，但不要过度，给彼此空间。",
+        "priority": "medium"
+      },
+      {
+        "category": "gift",
+        "title": "贴心小礼物",
+        "content": "根据对方的喜好送小礼物，如爱吃的零食、喜欢的书籍、提到过的小物件。",
+        "priority": "medium"
+      },
+      {
+        "category": "warning",
+        "title": "不要过早表白",
+        "content": "了解阶段不宜过早表白，可能会给对方压力，让关系自然发展。",
+        "priority": "high"
+      }
+    ],
+    "mediaReferences": [
+      {
+        "type": "tv",
+        "title": "恋爱技巧-深入了解",
+        "description": "如何深入了解对方的恋爱教学",
+        "scene": "分享个人经历和价值观的技巧",
+        "takeaway": "深度交流建立在相互信任的基础上",
+        "videoUrl": "https://search.bilibili.com/all?keyword=深入了解女生",
+        "videoType": "other"
+      },
+      {
+        "type": "tv",
+        "title": "第一次约会技巧",
+        "description": "完整约会案例分析",
+        "scene": "从认识到约会的完整流程",
+        "takeaway": "约会前的准备和约会中的互动技巧",
+        "videoUrl": "https://search.bilibili.com/all?keyword=第一次约会技巧",
+        "videoType": "other"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "knowing_1",
+        "title": "了解家庭背景",
+        "description": "知道对方的家庭情况和成长环境"
+      },
+      {
+        "id": "knowing_2",
+        "title": "了解价值观",
+        "description": "了解对方对生活、感情、未来的看法"
+      },
+      {
+        "id": "knowing_3",
+        "title": "发现共同爱好",
+        "description": "找到至少3个共同的兴趣爱好"
+      },
+      {
+        "id": "knowing_4",
+        "title": "建立情感连接",
+        "description": "分享彼此的快乐、烦恼和秘密"
+      },
+      {
+        "id": "knowing_5",
+        "title": "增加约会次数",
+        "description": "累计约会至少5次以上"
+      },
+      {
+        "id": "knowing_6",
+        "title": "融入社交圈",
+        "description": "见过对方的朋友或被介绍给朋友认识"
+      }
+    ],
+    "transitionConditions": [
+      "约会次数达到5次以上",
+      "双方开始分享私人情感和想法",
+      "聊天中开始出现暧昧氛围",
+      "双方对彼此有明显的好感"
+    ]
+  },
+  "escalating": {
+    "stage": "escalating",
+    "name": "关系升级阶段",
+    "description": "暧昧期，试探心意，提升亲密程度",
+    "tips": [
+      {
+        "category": "chat",
+        "title": "增加暧昧话题",
+        "content": "可以聊一些更亲密的话题，如理想型、对感情的看法、对彼此的印象。",
+        "priority": "high"
+      },
+      {
+        "category": "communication",
+        "title": "增加肢体接触",
+        "content": "适当的肢体接触，如帮忙整理头发、过马路时牵手、自然的拥抱等，观察对方反应。",
+        "priority": "high"
+      },
+      {
+        "category": "date",
+        "title": "创造浪漫氛围",
+        "content": "选择更浪漫的约会地点和时间，如晚上、有氛围的餐厅、散步等。",
+        "priority": "high"
+      },
+      {
+        "category": "gift",
+        "title": "更有意义的礼物",
+        "content": "送更有心意和纪念意义的礼物，如手工制品、定制的物品、象征意义的首饰。",
+        "priority": "medium"
+      },
+      {
+        "category": "communication",
+        "title": "暗示心意",
+        "content": "用语言或行动暗示自己的心意，如'和你在一起很开心''很想你'等。",
+        "priority": "high"
+      },
+      {
+        "category": "warning",
+        "title": "不要逼得太紧",
+        "content": "暧昧期需要耐心，不要逼迫对方表态，让感情自然发酵。",
+        "priority": "high"
+      }
+    ],
+    "mediaReferences": [
+      {
+        "type": "tv",
+        "title": "关系升级技巧大全",
+        "description": "B站热门关系升级恋爱技巧合集",
+        "scene": "从认识升级到恋爱关系的完整技巧",
+        "takeaway": "掌握关系升级的关键节点和技巧",
+        "videoUrl": "https://search.bilibili.com/all?keyword=关系升级技巧",
+        "videoType": "other"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "escalating_1",
+        "title": "增加私密互动",
+        "description": "开始有更多一对一的私密相处时间"
+      },
+      {
+        "id": "escalating_2",
+        "title": "试探性表白",
+        "description": "用间接方式表达好感，观察对方反应"
+      },
+      {
+        "id": "escalating_3",
+        "title": "肢体接触",
+        "description": "有自然的肢体接触，对方不排斥"
+      },
+      {
+        "id": "escalating_4",
+        "title": "表达想念",
+        "description": "开始直接表达想念和在意"
+      },
+      {
+        "id": "escalating_5",
+        "title": "专属称呼",
+        "description": "开始有互相的专属昵称"
+      },
+      {
+        "id": "escalating_6",
+        "title": "吃醋表现",
+        "description": "对对方与其他异性接触产生在意或吃醋"
+      }
+    ],
+    "transitionConditions": [
+      "有明显的肢体接触且对方不排斥",
+      "双方都表达了想念或在意",
+      "开始有专属的互动模式和称呼",
+      "双方都有进一步发展的强烈意愿"
+    ]
+  },
+  "intimate": {
+    "stage": "intimate",
+    "name": "亲密关系阶段",
+    "description": "深度连接，建立信任和情感依赖",
+    "tips": [
+      {
+        "category": "communication",
+        "title": "分享真实自我",
+        "content": "分享自己的脆弱、恐惧、不完美的一面，建立真正的亲密。",
+        "priority": "high"
+      },
+      {
+        "category": "chat",
+        "title": "深度对话",
+        "content": "进行关于人生、价值观、未来的深度对话，了解彼此的内心世界。",
+        "priority": "high"
+      },
+      {
+        "category": "date",
+        "title": "共度时光",
+        "content": "安排一些可以深入相处的活动，如旅行、做饭给对方吃、宅家看电影。",
+        "priority": "high"
+      },
+      {
+        "category": "communication",
+        "title": "支持彼此",
+        "content": "在对方遇到困难时给予支持，成为对方的精神支柱。",
+        "priority": "high"
+      },
+      {
+        "category": "warning",
+        "title": "保持边界感",
+        "content": "虽然亲密但仍要保持各自的空间和边界，不要过度依赖或控制。",
+        "priority": "medium"
+      },
+      {
+        "category": "gift",
+        "title": "走心的礼物",
+        "content": "送更走心的礼物，如手工相册、代表回忆的物品、象征承诺的礼物。",
+        "priority": "medium"
+      }
+    ],
+    "mediaReferences": [
+      {
+        "type": "tv",
+        "title": "《恋爱先生》情感指导",
+        "description": "程皓关于建立信任和亲密关系的建议",
+        "scene": "恋爱先生中的情感咨询片段",
+        "takeaway": "深度连接需要时间积累",
+        "videoUrl": "https://search.bilibili.com/all?keyword=恋爱先生",
+        "videoType": "other"
+      },
+      {
+        "type": "tv",
+        "title": "恋爱技巧-情感升温",
+        "description": "让感情升温的实用方法",
+        "scene": "如何建立深度的情感依赖",
+        "takeaway": "相互支持是亲密关系的基础",
+        "videoUrl": "https://search.bilibili.com/all?keyword=恋爱技巧",
+        "videoType": "other"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "intimate_1",
+        "title": "分享秘密",
+        "description": "分享彼此的秘密和脆弱面"
+      },
+      {
+        "id": "intimate_2",
+        "title": "互相支持",
+        "description": "在对方困难时给予支持和陪伴"
+      },
+      {
+        "id": "intimate_3",
+        "title": "融入生活",
+        "description": "开始参与对方的生活，如见家人、密友"
+      },
+      {
+        "id": "intimate_4",
+        "title": "规划未来",
+        "description": "开始讨论和规划涉及两人的未来"
+      },
+      {
+        "id": "intimate_5",
+        "title": "深度依赖",
+        "description": "双方都对彼此产生情感依赖"
+      },
+      {
+        "id": "intimate_6",
+        "title": "信任建立",
+        "description": "建立了深度的信任和安全感"
+      }
+    ],
+    "transitionConditions": [
+      "已深度了解彼此的优缺点",
+      "双方都能在对方面前做真实的自己",
+      "已经开始讨论未来的话题",
+      "双方都有确认关系的意愿"
+    ]
+  },
+  "committed": {
+    "stage": "committed",
+    "name": "确认关系",
+    "description": "正式表白，建立恋爱关系",
+    "tips": [
+      {
+        "category": "chat",
+        "title": "选择合适时机",
+        "content": "找一个合适的时机和氛围，如约会结束时、特殊节日、有纪念意义的地点。",
+        "priority": "high"
+      },
+      {
+        "category": "communication",
+        "title": "真诚表白",
+        "content": "用真诚的方式表达自己的心意，不需要华丽的辞藻，真心最重要。",
+        "priority": "high"
+      },
+      {
+        "category": "date",
+        "title": "精心安排",
+        "content": "可以安排一个特别的表白场景，如第一次见面的地方、喜欢的餐厅、准备小礼物。",
+        "priority": "medium"
+      },
+      {
+        "category": "communication",
+        "title": "给对方时间",
+        "content": "表白后给对方思考的时间，不要强求立即回应。",
+        "priority": "high"
+      },
+      {
+        "category": "communication",
+        "title": "明确关系",
+        "content": "确认关系后明确彼此的期待，如是否公开、如何称呼、未来规划。",
+        "priority": "high"
+      },
+      {
+        "category": "warning",
+        "title": "接受拒绝的可能",
+        "content": "要做好被拒绝的心理准备，以成熟的方式接受结果。",
+        "priority": "medium"
+      }
+    ],
+    "mediaReferences": [
+      {
+        "type": "tv",
+        "title": "表白技巧大全",
+        "description": "B站热门表白技巧教学合集",
+        "scene": "各种表白场景和技巧的完整指南",
+        "takeaway": "表白需要真诚、合适的时机和充分的准备",
+        "videoUrl": "https://search.bilibili.com/all?keyword=表白技巧",
+        "videoType": "other"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "committed_1",
+        "title": "正式表白",
+        "description": "进行正式的表白"
+      },
+      {
+        "id": "committed_2",
+        "title": "确立关系",
+        "description": "双方明确确认恋爱关系"
+      },
+      {
+        "id": "committed_3",
+        "title": "公开关系",
+        "description": "根据双方意愿决定是否公开"
+      },
+      {
+        "id": "committed_4",
+        "title": "制定规则",
+        "description": "讨论并确立关系中的基本规则和期待"
+      },
+      {
+        "id": "committed_5",
+        "title": "计划未来",
+        "description": "开始规划作为情侣的未来"
+      }
+    ],
+    "transitionConditions": [
+      "已正式表白并得到积极回应",
+      "双方明确确认恋爱关系",
+      "建立了基本的相处规则",
+      "对未来有了共同的规划"
+    ]
+  }
+}

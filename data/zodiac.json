@@ -1,0 +1,518 @@
+{
+  "aries": {
+    "sign": "aries",
+    "name": "白羊座",
+    "nameEn": "Aries",
+    "dateRange": "3月21日 - 4月19日",
+    "element": "fire",
+    "quality": "cardinal",
+    "ruler": "火星",
+    "traits": {
+      "positive": ["勇敢", "热情", "自信", "直率", "行动力强", "富有冒险精神"],
+      "negative": ["冲动", "急躁", "缺乏耐心", "自我中心", "脾气暴躁"]
+    },
+    "love": {
+      "style": "热烈直接，喜欢主动出击",
+      "needs": ["自由空间", "被欣赏的感觉", "新鲜感", "挑战性"],
+      "turnOns": ["自信的人", "能跟上他们节奏的人", "独立的个体", "有趣的灵魂"],
+      "turnOffs": ["过于粘人", "优柔寡断", "太过被动", "控制欲强"],
+      "compatibility": {
+        "aries": 75,
+        "taurus": 55,
+        "gemini": 70,
+        "cancer": 45,
+        "leo": 90,
+        "virgo": 50,
+        "libra": 65,
+        "scorpio": 60,
+        "sagittarius": 95,
+        "capricorn": 50,
+        "aquarius": 70,
+        "pisces": 55
+      }
+    },
+    "communication": {
+      "style": "直来直去，不喜欢拐弯抹角",
+      "bestApproach": "直接表达想法，坦诚相待",
+      "avoid": ["玩心机", "冷战", "拖延", "过于含蓄"]
+    },
+    "luck": {
+      "colors": ["红色", "橙色", "金色"],
+      "numbers": [1, 8, 17],
+      "days": [1, 8, 15]
+    }
+  },
+  "taurus": {
+    "sign": "taurus",
+    "name": "金牛座",
+    "nameEn": "Taurus",
+    "dateRange": "4月20日 - 5月20日",
+    "element": "earth",
+    "quality": "fixed",
+    "ruler": "金星",
+    "traits": {
+      "positive": ["稳重", "可靠", "耐心", "实际", "忠诚", "有艺术天赋"],
+      "negative": ["固执", "占有欲强", "物质主义", "不善变通", "慢热"]
+    },
+    "love": {
+      "style": "慢热但专一，重视感官体验",
+      "needs": ["安全感", "物质基础", "稳定的关系", "被尊重"],
+      "turnOns": ["会做饭的人", "有品味", "经济稳定", "温柔体贴"],
+      "turnOffs": ["变化太快", "不切实际", "浪费", "不可靠"],
+      "compatibility": {
+        "aries": 55,
+        "taurus": 85,
+        "gemini": 50,
+        "cancer": 80,
+        "leo": 55,
+        "virgo": 90,
+        "libra": 70,
+        "scorpio": 85,
+        "sagittarius": 45,
+        "capricorn": 88,
+        "aquarius": 50,
+        "pisces": 75
+      }
+    },
+    "communication": {
+      "style": "温和务实，不喜欢争论",
+      "bestApproach": "用行动证明，慢慢建立信任",
+      "avoid": ["催促", "过度变化", "空头承诺", "激烈冲突"]
+    },
+    "luck": {
+      "colors": ["绿色", "粉色", "蓝色"],
+      "numbers": [2, 6, 15],
+      "days": [2, 6, 16]
+    }
+  },
+  "gemini": {
+    "sign": "gemini",
+    "name": "双子座",
+    "nameEn": "Gemini",
+    "dateRange": "5月21日 - 6月21日",
+    "element": "air",
+    "quality": "mutable",
+    "ruler": "水星",
+    "traits": {
+      "positive": ["聪明", "机智", "善变", "好奇", "社交能力强", "多才多艺"],
+      "negative": ["善变", "不够专注", "表面化", "话多", "情绪波动大"]
+    },
+    "love": {
+      "style": "轻松有趣，需要精神交流",
+      "needs": ["新鲜感", "智力刺激", "自由", "多样性"],
+      "turnOns": ["有趣的话题", "幽默感", "聪明的人", "能玩到一起"],
+      "turnOffs": ["太严肃", "粘人", "无聊", "单话题重复"],
+      "compatibility": {
+        "aries": 70,
+        "taurus": 50,
+        "gemini": 75,
+        "cancer": 55,
+        "leo": 70,
+        "virgo": 65,
+        "libra": 85,
+        "scorpio": 50,
+        "sagittarius": 80,
+        "capricorn": 45,
+        "aquarius": 90,
+        "pisces": 60
+      }
+    },
+    "communication": {
+      "style": "健谈幽默，话题跳跃",
+      "bestApproach": "保持有趣，多交流想法",
+      "avoid": ["单调重复", "过于严肃", "限制社交", "沉默冷战"]
+    },
+    "luck": {
+      "colors": ["黄色", "浅蓝", "银色"],
+      "numbers": [3, 5, 12],
+      "days": [3, 12, 21]
+    }
+  },
+  "cancer": {
+    "sign": "cancer",
+    "name": "巨蟹座",
+    "nameEn": "Cancer",
+    "dateRange": "6月22日 - 7月22日",
+    "element": "water",
+    "quality": "cardinal",
+    "ruler": "月亮",
+    "traits": {
+      "positive": ["体贴", "敏感", "顾家", "有同情心", "忠诚", "直觉强"],
+      "negative": ["情绪化", "敏感多疑", "占有欲强", "过于自我保护", "记仇"]
+    },
+    "love": {
+      "style": "温柔专一，重视情感连接",
+      "needs": ["安全感", "家庭温暖", "情感支持", "被需要"],
+      "turnOns": ["顾家的人", "温柔体贴", "记得细节", "有责任感"],
+      "turnOffs": ["冷漠", "不靠谱", "忽视感受", "变化太快"],
+      "compatibility": {
+        "aries": 45,
+        "taurus": 80,
+        "gemini": 55,
+        "cancer": 78,
+        "leo": 50,
+        "virgo": 75,
+        "libra": 55,
+        "scorpio": 90,
+        "sagittarius": 40,
+        "capricorn": 60,
+        "aquarius": 50,
+        "pisces": 85
+      }
+    },
+    "communication": {
+      "style": "温和感性，注重感受",
+      "bestApproach": "温柔体贴，慢慢建立信任",
+      "avoid": ["粗鲁直接", "忽视情绪", "过于理性", "忽冷忽热"]
+    },
+    "luck": {
+      "colors": ["白色", "珍珠色", "海蓝色"],
+      "numbers": [2, 7, 11],
+      "days": [2, 7, 11]
+    }
+  },
+  "leo": {
+    "sign": "leo",
+    "name": "狮子座",
+    "nameEn": "Leo",
+    "dateRange": "7月23日 - 8月22日",
+    "element": "fire",
+    "quality": "fixed",
+    "ruler": "太阳",
+    "traits": {
+      "positive": ["自信", "慷慨", "热情", "有领导力", "忠诚", "有创造力"],
+      "negative": ["自负", "爱面子", "控制欲强", "固执", "需要关注"]
+    },
+    "love": {
+      "style": "热烈大方，喜欢被崇拜",
+      "needs": ["被赞美", "被需要", "尊重", "浪漫"],
+      "turnOns": ["欣赏他们", "自信独立", "有品味", "懂得浪漫"],
+      "turnOffs": ["忽视他们", "过于冷淡", "不尊重", "控制他们"],
+      "compatibility": {
+        "aries": 90,
+        "taurus": 55,
+        "gemini": 70,
+        "cancer": 50,
+        "leo": 80,
+        "virgo": 55,
+        "libra": 75,
+        "scorpio": 65,
+        "sagittarius": 88,
+        "capricorn": 50,
+        "aquarius": 60,
+        "pisces": 65
+      }
+    },
+    "communication": {
+      "style": "自信直接，喜欢主导",
+      "bestApproach": "给予赞美和尊重，正面沟通",
+      "avoid": ["批评", "忽视", "冷漠", "挑战权威"]
+    },
+    "luck": {
+      "colors": ["金色", "橙色", "紫色"],
+      "numbers": [1, 4, 10],
+      "days": [1, 10, 19]
+    }
+  },
+  "virgo": {
+    "sign": "virgo",
+    "name": "处女座",
+    "nameEn": "Virgo",
+    "dateRange": "8月23日 - 9月22日",
+    "element": "earth",
+    "quality": "mutable",
+    "ruler": "水星",
+    "traits": {
+      "positive": ["细心", "完美主义", "实际", "分析能力强", "可靠", "有服务精神"],
+      "negative": ["过于挑剔", "焦虑", "过于理性", "不易放松", "爱操心"]
+    },
+    "love": {
+      "style": "谨慎务实，通过服务表达爱",
+      "needs": ["秩序感", "被理解", "实际关怀", "稳定"],
+      "turnOns": ["细心体贴", "有条理", "注重健康", "真诚"],
+      "turnOffs": ["混乱", "不负责任", "粗心大意", "虚伪"],
+      "compatibility": {
+        "aries": 50,
+        "taurus": 90,
+        "gemini": 65,
+        "cancer": 75,
+        "leo": 55,
+        "virgo": 80,
+        "libra": 60,
+        "scorpio": 75,
+        "sagittarius": 45,
+        "capricorn": 85,
+        "aquarius": 55,
+        "pisces": 70
+      }
+    },
+    "communication": {
+      "style": "理性分析，注重细节",
+      "bestApproach": "真诚实际，注重细节",
+      "avoid": ["过于随意", "不守时", "混乱", "空洞承诺"]
+    },
+    "luck": {
+      "colors": ["米色", "灰色", "深蓝色"],
+      "numbers": [5, 14, 23],
+      "days": [5, 14, 23]
+    }
+  },
+  "libra": {
+    "sign": "libra",
+    "name": "天秤座",
+    "nameEn": "Libra",
+    "dateRange": "9月23日 - 10月23日",
+    "element": "air",
+    "quality": "cardinal",
+    "ruler": "金星",
+    "traits": {
+      "positive": ["优雅", "公平", "社交能力强", "艺术品味", "和谐", "外交手腕"],
+      "negative": ["优柔寡断", "过度在意他人看法", "逃避冲突", "表面化", "依赖"]
+    },
+    "love": {
+      "style": "浪漫优雅，追求平衡和谐",
+      "needs": ["美感", "和谐关系", "陪伴", "被理解"],
+      "turnOns": ["有品味", "优雅得体", "浪漫", "懂得欣赏"],
+      "turnOffs": ["粗鲁", "冲突", "不修边幅", "强迫"],
+      "compatibility": {
+        "aries": 65,
+        "taurus": 70,
+        "gemini": 85,
+        "cancer": 55,
+        "leo": 75,
+        "virgo": 60,
+        "libra": 80,
+        "scorpio": 60,
+        "sagittarius": 70,
+        "capricorn": 55,
+        "aquarius": 75,
+        "pisces": 70
+      }
+    },
+    "communication": {
+      "style": "温和有礼，避免冲突",
+      "bestApproach": "优雅沟通，照顾对方感受",
+      "avoid": ["强硬", "粗鲁", "逼迫决定", "激烈冲突"]
+    },
+    "luck": {
+      "colors": ["粉色", "淡蓝", "薰衣草色"],
+      "numbers": [4, 6, 13],
+      "days": [4, 13, 22]
+    }
+  },
+  "scorpio": {
+    "sign": "scorpio",
+    "name": "天蝎座",
+    "nameEn": "Scorpio",
+    "dateRange": "10月24日 - 11月22日",
+    "element": "water",
+    "quality": "fixed",
+    "ruler": "冥王星",
+    "traits": {
+      "positive": ["深沉", "热情", "直觉强", "有魅力", "忠诚", "意志坚强"],
+      "negative": ["嫉妒心强", "控制欲强", "记仇", "多疑", "极端"]
+    },
+    "love": {
+      "style": "深沉专一，追求灵魂结合",
+      "needs": ["深度连接", "忠诚", "隐私", "情感安全"],
+      "turnOns": ["神秘感", "深度交流", "忠诚专一", "性感"],
+      "turnOffs": ["虚伪", "背叛", "肤浅", "窥探隐私"],
+      "compatibility": {
+        "aries": 60,
+        "taurus": 85,
+        "gemini": 50,
+        "cancer": 90,
+        "leo": 65,
+        "virgo": 75,
+        "libra": 60,
+        "scorpio": 85,
+        "sagittarius": 50,
+        "capricorn": 75,
+        "aquarius": 55,
+        "pisces": 88
+      }
+    },
+    "communication": {
+      "style": "深沉直接，注重真实",
+      "bestApproach": "真诚深入，建立信任",
+      "avoid": ["虚伪", "背叛信任", "表面化", "过度追问"]
+    },
+    "luck": {
+      "colors": ["黑色", "深红", "深紫"],
+      "numbers": [8, 11, 18],
+      "days": [8, 18, 27]
+    }
+  },
+  "sagittarius": {
+    "sign": "sagittarius",
+    "name": "射手座",
+    "nameEn": "Sagittarius",
+    "dateRange": "11月23日 - 12月21日",
+    "element": "fire",
+    "quality": "mutable",
+    "ruler": "木星",
+    "traits": {
+      "positive": ["乐观", "自由", "爱冒险", "哲学思考", "诚实", "热情"],
+      "negative": ["不够专注", "直言不讳", "承诺恐惧", "不够细心", "冲动"]
+    },
+    "love": {
+      "style": "自由轻松，重视精神成长",
+      "needs": ["自由", "冒险", "成长", "哲学交流"],
+      "turnOns": ["爱旅行", "乐观开朗", "有智慧", "独立自主"],
+      "turnOffs": ["束缚", "太严肃", "控制欲", "沉闷"],
+      "compatibility": {
+        "aries": 95,
+        "taurus": 45,
+        "gemini": 80,
+        "cancer": 40,
+        "leo": 88,
+        "virgo": 45,
+        "libra": 70,
+        "scorpio": 50,
+        "sagittarius": 78,
+        "capricorn": 45,
+        "aquarius": 80,
+        "pisces": 65
+      }
+    },
+    "communication": {
+      "style": "坦率直接，喜欢深度交流",
+      "bestApproach": "开放坦诚，保持轻松有趣",
+      "avoid": ["束缚", "太严肃", "控制", "沉闷话题"]
+    },
+    "luck": {
+      "colors": ["紫色", "深蓝", "酒红色"],
+      "numbers": [3, 9, 12],
+      "days": [3, 9, 21]
+    }
+  },
+  "capricorn": {
+    "sign": "capricorn",
+    "name": "摩羯座",
+    "nameEn": "Capricorn",
+    "dateRange": "12月22日 - 1月19日",
+    "element": "earth",
+    "quality": "cardinal",
+    "ruler": "土星",
+    "traits": {
+      "positive": ["有野心", "自律", "可靠", "实际", "有责任感", "有耐心"],
+      "negative": ["工作狂", "过于严肃", "悲观", "不易表达情感", "固执"]
+    },
+    "love": {
+      "style": "认真负责，通过行动表达",
+      "needs": ["稳定", "尊重", "共同目标", "实际支持"],
+      "turnOns": ["有上进心", "稳重可靠", "有责任感", "有共同目标"],
+      "turnOffs": ["不靠谱", "太随意", "浪费时间", "不负责任"],
+      "compatibility": {
+        "aries": 50,
+        "taurus": 88,
+        "gemini": 45,
+        "cancer": 60,
+        "leo": 50,
+        "virgo": 85,
+        "libra": 55,
+        "scorpio": 75,
+        "sagittarius": 45,
+        "capricorn": 82,
+        "aquarius": 60,
+        "pisces": 65
+      }
+    },
+    "communication": {
+      "style": "实际稳重，不善表达情感",
+      "bestApproach": "实际具体，给足时间",
+      "avoid": ["催促", "过于情绪化", "不切实际", "浪费时间"]
+    },
+    "luck": {
+      "colors": ["黑色", "深灰", "墨绿色"],
+      "numbers": [4, 8, 13],
+      "days": [4, 8, 16]
+    }
+  },
+  "aquarius": {
+    "sign": "aquarius",
+    "name": "水瓶座",
+    "nameEn": "Aquarius",
+    "dateRange": "1月20日 - 2月18日",
+    "element": "air",
+    "quality": "fixed",
+    "ruler": "天王星",
+    "traits": {
+      "positive": ["独立", "创新", "人道主义", "智慧", "友善", "有远见"],
+      "negative": ["疏离", "固执己见", "情感淡漠", "不可预测", "叛逆"]
+    },
+    "love": {
+      "style": "自由独立，重视精神共鸣",
+      "needs": ["自由", "智力匹配", "友谊基础", "个人空间"],
+      "turnOns": ["独特个性", "聪明智慧", "独立自主", "有理想"],
+      "turnOffs": ["占有欲", "束缚", "传统保守", "情感绑架"],
+      "compatibility": {
+        "aries": 70,
+        "taurus": 50,
+        "gemini": 90,
+        "cancer": 50,
+        "leo": 60,
+        "virgo": 55,
+        "libra": 75,
+        "scorpio": 55,
+        "sagittarius": 80,
+        "capricorn": 60,
+        "aquarius": 80,
+        "pisces": 60
+      }
+    },
+    "communication": {
+      "style": "理性独特，不喜欢情绪化",
+      "bestApproach": "智力交流，尊重独立",
+      "avoid": ["情绪化", "束缚", "传统套路", "强迫"]
+    },
+    "luck": {
+      "colors": ["电光蓝", "银色", "紫色"],
+      "numbers": [4, 7, 11],
+      "days": [4, 11, 22]
+    }
+  },
+  "pisces": {
+    "sign": "pisces",
+    "name": "双鱼座",
+    "nameEn": "Pisces",
+    "dateRange": "2月19日 - 3月20日",
+    "element": "water",
+    "quality": "mutable",
+    "ruler": "海王星",
+    "traits": {
+      "positive": ["浪漫", "富有同情心", "艺术天赋", "直觉强", "无私", "适应力强"],
+      "negative": ["过于敏感", "逃避现实", "易受影响", "不切实际", "自我牺牲"]
+    },
+    "love": {
+      "style": "浪漫梦幻，追求灵魂伴侣",
+      "needs": ["情感连接", "浪漫", "理解", "安全感"],
+      "turnOns": ["浪漫", "温柔体贴", "有艺术气息", "懂得倾听"],
+      "turnOffs": ["太现实", "粗鲁", "无情", "太理性"],
+      "compatibility": {
+        "aries": 55,
+        "taurus": 75,
+        "gemini": 60,
+        "cancer": 85,
+        "leo": 65,
+        "virgo": 70,
+        "libra": 70,
+        "scorpio": 88,
+        "sagittarius": 65,
+        "capricorn": 65,
+        "aquarius": 60,
+        "pisces": 80
+      }
+    },
+    "communication": {
+      "style": "温和感性，富有想象力",
+      "bestApproach": "温柔浪漫，多情感交流",
+      "avoid": ["过于理性", "粗鲁", "现实打击", "逼迫"]
+    },
+    "luck": {
+      "colors": ["海蓝色", "紫色", "淡绿色"],
+      "numbers": [3, 7, 12],
+      "days": [3, 7, 12]
+    }
+  }
+}

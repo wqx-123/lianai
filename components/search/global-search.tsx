@@ -54,11 +54,22 @@ export function GlobalSearch({ profiles, interactions, onProfileClick, onInterac
       if ((e.key === 'k' || e.key === 'K') && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         setOpen((open) => !open);
+        if (!open) {
+          setSearch(''); // 打开时重置搜索
+        }
       }
     };
     document.addEventListener('keydown', down);
     return () => document.removeEventListener('keydown', down);
   }, []);
+
+  // 当对话框打开时重置搜索
+  const handleOpenChange = (newOpen: boolean) => {
+    setOpen(newOpen);
+    if (!newOpen) {
+      setSearch('');
+    }
+  };
 
   // 过滤对象
   const filteredProfiles = profiles.filter((profile) => {
@@ -85,13 +96,11 @@ export function GlobalSearch({ profiles, interactions, onProfileClick, onInterac
 
   const handleProfileSelect = (profileId: string) => {
     setOpen(false);
-    setSearch('');
     onProfileClick?.(profileId);
   };
 
   const handleInteractionSelect = (profileId: string, interactionId: string) => {
     setOpen(false);
-    setSearch('');
     onInteractionClick?.(profileId, interactionId);
   };
 
@@ -110,7 +119,7 @@ export function GlobalSearch({ profiles, interactions, onProfileClick, onInterac
       </button>
 
       {/* 搜索对话框 */}
-      <CommandDialog open={open} onOpenChange={setOpen}>
+      <CommandDialog open={open} onOpenChange={handleOpenChange}>
         <CommandInput
           placeholder="搜索对象、记录、标签..."
           value={search}

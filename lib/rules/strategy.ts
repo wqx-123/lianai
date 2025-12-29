@@ -29,8 +29,8 @@ export class StrategyRules {
   generateStrategy(params: {
     profile: Profile;
     stageData: RelationshipStageData;
-    zodiacAnalysis?: ZodiacAnalysis;
-    personaAnalysis?: PersonaAnalysis;
+    zodiacAnalysis?: ZodiacAnalysis | null;
+    personaAnalysis?: PersonaAnalysis | null;
   }): Strategy {
     const { profile, stageData, zodiacAnalysis, personaAnalysis } = params;
     const currentStage = stageData.currentStage;
@@ -64,8 +64,8 @@ export class StrategyRules {
   private generateDailyActions(
     profile: Profile,
     stageContent: StageContent,
-    zodiacAnalysis?: ZodiacAnalysis,
-    personaAnalysis?: PersonaAnalysis
+    zodiacAnalysis?: ZodiacAnalysis | null,
+    personaAnalysis?: PersonaAnalysis | null
   ) {
     const actions: Strategy['dailyActions'] = [];
 
@@ -408,7 +408,7 @@ export class StrategyRules {
   /**
    * 生成警告
    */
-  private generateWarnings(profile: Profile, stageContent: StageContent, zodiacAnalysis?: ZodiacAnalysis) {
+  private generateWarnings(profile: Profile, stageContent: StageContent, zodiacAnalysis?: ZodiacAnalysis | null) {
     const warnings: string[] = [];
 
     // 从阶段提示中提取警告
@@ -435,8 +435,8 @@ export class StrategyRules {
    */
   private calculateSuccessProbability(
     stageData: RelationshipStageData,
-    zodiacAnalysis?: ZodiacAnalysis,
-    personaAnalysis?: PersonaAnalysis
+    zodiacAnalysis?: ZodiacAnalysis | null,
+    personaAnalysis?: PersonaAnalysis | null
   ): number {
     let probability = 50;
 

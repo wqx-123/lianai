@@ -29,8 +29,8 @@ export class StrategyRules {
   generateStrategy(params: {
     profile: Profile;
     stageData: RelationshipStageData;
-    zodiacAnalysis?: ZodiacAnalysis | null;
-    personaAnalysis?: PersonaAnalysis | null;
+    zodiacAnalysis?: ZodiacAnalysis;
+    personaAnalysis?: PersonaAnalysis;
   }): Strategy {
     const { profile, stageData, zodiacAnalysis, personaAnalysis } = params;
     const currentStage = stageData.currentStage;
@@ -64,8 +64,8 @@ export class StrategyRules {
   private generateDailyActions(
     profile: Profile,
     stageContent: StageContent,
-    zodiacAnalysis?: ZodiacAnalysis | null,
-    personaAnalysis?: PersonaAnalysis | null
+    zodiacAnalysis?: ZodiacAnalysis,
+    personaAnalysis?: PersonaAnalysis
   ) {
     const actions: Strategy['dailyActions'] = [];
 
@@ -408,7 +408,7 @@ export class StrategyRules {
   /**
    * 生成警告
    */
-  private generateWarnings(profile: Profile, stageContent: StageContent, zodiacAnalysis?: ZodiacAnalysis | null) {
+  private generateWarnings(profile: Profile, stageContent: StageContent, zodiacAnalysis?: ZodiacAnalysis) {
     const warnings: string[] = [];
 
     // 从阶段提示中提取警告
@@ -435,8 +435,8 @@ export class StrategyRules {
    */
   private calculateSuccessProbability(
     stageData: RelationshipStageData,
-    zodiacAnalysis?: ZodiacAnalysis | null,
-    personaAnalysis?: PersonaAnalysis | null
+    zodiacAnalysis?: ZodiacAnalysis,
+    personaAnalysis?: PersonaAnalysis
   ): number {
     let probability = 50;
 
@@ -482,7 +482,10 @@ export class StrategyRules {
       ],
       weeklyPlan: {
         goal: '增进了解和感情',
-        activities: ['聊天交流', '一起做事'],
+        activities: [
+          { name: '聊天交流', actionSteps: ['主动发起对话', '分享日常'] },
+          { name: '一起做事', actionSteps: ['寻找共同兴趣', '安排活动'] },
+        ],
         expectedOutcomes: ['了解对方', '拉近距离'],
       },
       keyMilestones: [],

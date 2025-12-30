@@ -81,15 +81,15 @@ export function calculateStageDurations(stageData: RelationshipStageData): Stage
   const history = stageData.stageHistory || [];
 
   history.forEach((entry, index) => {
-    const startDate = new Date(entry.changedAt);
-    const endDate = history[index + 1] ? new Date(history[index + 1].changedAt) : new Date();
+    const startDate = new Date(entry.enteredAt);
+    const endDate = entry.exitedAt ? new Date(entry.exitedAt) : new Date();
     const durationInDays = Math.floor((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
 
     durations.push({
       stage: entry.stage,
       duration: durationInDays,
-      startDate: entry.changedAt,
-      endDate: history[index + 1]?.changedAt,
+      startDate: entry.enteredAt,
+      endDate: entry.exitedAt,
     });
   });
 
@@ -97,7 +97,7 @@ export function calculateStageDurations(stageData: RelationshipStageData): Stage
   if (stageData.currentStage) {
     const currentEntry = history[history.length - 1];
     if (currentEntry) {
-      const startDate = new Date(currentEntry.changedAt);
+      const startDate = new Date(currentEntry.enteredAt);
       const durationInDays = Math.floor((new Date().getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
 
       // 如果当前阶段已经添加过，更新它
@@ -109,7 +109,7 @@ export function calculateStageDurations(stageData: RelationshipStageData): Stage
         durations.push({
           stage: stageData.currentStage,
           duration: durationInDays,
-          startDate: currentEntry.changedAt,
+          startDate: currentEntry.enteredAt,
         });
       }
     }

@@ -262,7 +262,7 @@ export function StageTracker({ stageData, profile, onTaskToggle }: StageTrackerP
                             {media.videoUrl && (
                               <VideoPlayer
                                 url={adjustSearchUrl(media.videoUrl, profile?.gender)}
-                                type={media.videoType || media.videoPlatform || 'other'}
+                                type={(media.videoType || 'other') as 'other' | 'local' | 'youtube' | 'bilibili' | 'vimeo'}
                                 title={media.title}
                               />
                             )}

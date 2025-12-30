@@ -164,7 +164,7 @@ export function StatisticsPanel({ interactions, stageData }: StatisticsPanelProp
                   <YAxis />
                   <Tooltip
                     labelFormatter={(value) => new Date(value).toLocaleDateString('zh-CN')}
-                    formatter={(value: number) => [`${value} 次`, '互动']}
+                    formatter={(value) => [`${value} 次`, '互动']}
                   />
                   <Line type="monotone" dataKey="count" stroke="#ec4899" strokeWidth={2} dot={{ r: 4 }} />
                 </LineChart>
@@ -189,7 +189,7 @@ export function StatisticsPanel({ interactions, stageData }: StatisticsPanelProp
                     cx="50%"
                     cy="50%"
                     labelLine={false}
-                    label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                    label={({ name, percent }) => `${name} ${((percent ?? 0) * 100).toFixed(0)}%`}
                     outerRadius={80}
                     dataKey="value"
                   >
@@ -197,7 +197,7 @@ export function StatisticsPanel({ interactions, stageData }: StatisticsPanelProp
                       <Cell key={`type-${entry.type}`} fill={CHART_COLORS[entry.type as keyof typeof CHART_COLORS]} />
                     ))}
                   </Pie>
-                  <Tooltip formatter={(value: number) => [`${value} 次`, '数量']} />
+                  <Tooltip formatter={(value) => [`${value} 次`, '数量']} />
                 </PieChart>
               </ResponsiveContainer>
             ) : (
@@ -220,7 +220,7 @@ export function StatisticsPanel({ interactions, stageData }: StatisticsPanelProp
                     cx="50%"
                     cy="50%"
                     labelLine={false}
-                    label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                    label={({ name, percent }) => `${name} ${((percent ?? 0) * 100).toFixed(0)}%`}
                     outerRadius={80}
                     dataKey="value"
                   >
@@ -228,7 +228,7 @@ export function StatisticsPanel({ interactions, stageData }: StatisticsPanelProp
                       <Cell key={`mood-${entry.mood}`} fill={CHART_COLORS[entry.mood as keyof typeof CHART_COLORS]} />
                     ))}
                   </Pie>
-                  <Tooltip formatter={(value: number) => [`${value} 次`, '数量']} />
+                  <Tooltip formatter={(value) => [`${value} 次`, '数量']} />
                 </PieChart>
               </ResponsiveContainer>
             ) : (
@@ -249,7 +249,7 @@ export function StatisticsPanel({ interactions, stageData }: StatisticsPanelProp
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="name" tick={{ fontSize: 12 }} />
                   <YAxis label={{ value: '天', angle: -90, position: 'insideLeft' }} />
-                  <Tooltip formatter={(value: number) => [`${value} 天`, '时长']} />
+                  <Tooltip formatter={(value) => [`${value} 天`, '时长']} />
                   <Bar dataKey="days" fill="#a855f7" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>

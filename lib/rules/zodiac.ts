@@ -17,8 +17,8 @@ export class ZodiacRules {
   /**
    * 获取星座信息
    */
-  getZodiacInfo(sign: ZodiacSign): ZodiacInfo | null {
-    return this.data[sign] || null;
+  getZodiacInfo(sign: ZodiacSign): ZodiacInfo | undefined {
+    return this.data[sign];
   }
 
   /**
@@ -26,7 +26,7 @@ export class ZodiacRules {
    */
   getAllSigns(): { sign: ZodiacSign; name: string; nameEn: string }[] {
     return Object.values(this.data).map(info => ({
-      sign: info.sign,
+      sign: info.sign as ZodiacSign,
       name: info.name,
       nameEn: info.nameEn,
     }));
@@ -35,12 +35,12 @@ export class ZodiacRules {
   /**
    * 分析星座
    */
-  analyze(sign: ZodiacSign): ZodiacAnalysis | null {
+  analyze(sign: ZodiacSign): ZodiacAnalysis | undefined {
     const info = this.getZodiacInfo(sign);
-    if (!info) return null;
+    if (!info) return undefined;
 
     return {
-      sign: info.sign,
+      sign: info.sign as ZodiacSign,
       traits: [...info.traits.positive, ...info.traits.negative.slice(0, 2)],
       loveStyle: info.love.style,
       compatibilityScore: 75, // 默认分数，实际需要两个人的星座对比
@@ -79,9 +79,9 @@ export class ZodiacRules {
   /**
    * 获取幸运信息
    */
-  getLuckInfo(sign: ZodiacSign): { colors: string[]; numbers: number[]; days: number[] } | null {
+  getLuckInfo(sign: ZodiacSign): { colors: string[]; numbers: number[]; days: number[] } | undefined {
     const info = this.getZodiacInfo(sign);
-    if (!info) return null;
+    if (!info) return undefined;
 
     return {
       colors: info.luck.colors,
@@ -128,9 +128,9 @@ export class ZodiacRules {
   /**
    * 获取星座元素分类
    */
-  getElement(sign: ZodiacSign): 'fire' | 'earth' | 'air' | 'water' | null {
+  getElement(sign: ZodiacSign): 'fire' | 'earth' | 'air' | 'water' | undefined {
     const info = this.getZodiacInfo(sign);
-    return info?.element || null;
+    return info?.element as 'fire' | 'earth' | 'air' | 'water' | undefined;
   }
 
   /**

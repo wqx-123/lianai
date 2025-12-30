@@ -504,7 +504,7 @@ export function StageProgressVisualizer({
                                     variant="outline"
                                     size="sm"
                                     onClick={() => {
-                                      const videoType = media.videoType || media.videoPlatform || 'other';
+                                      const videoType = media.videoType || 'other';
                                       if (videoType === 'local') {
                                         // 本地视频使用播放器
                                         // 这里简化处理，实际可以集成 VideoPlayer
